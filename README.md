@@ -1,16 +1,25 @@
-# React + Vite
+# AstroAtlas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React web application that displays planetary data fetched from an external API.
+Built collaboratively as a capstone project for TS Academy.
 
-Currently, two official plugins are available:
+## Components
+| Component | File |
+|-----------|------|
+| Layout | src/components/Layout.jsx |
+| Header | src/components/Header.jsx |
+| Hero | src/components/Hero.jsx |
+| PlanetCard | src/components/PlanetCard.jsx |
+| PlanetSection | src/components/PlanetSection.jsx |
+| VideoSection | src/components/VideoSection.jsx |
+| ContactForm | src/components/ContactForm.jsx |
+| Footer | src/components/Footer.jsx |
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Running Locally
+1. Clone the repo
+2. Copy `.env.example` to `.env` and fill in the API URL
+3. Run `npm install`
+4. Run `npm run dev`
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Live URL
+<!-- Add after deployment -->
