@@ -1,12 +1,7 @@
-import PlanetCard from "./components/PlanetCard";
+import Layout from "./components/Layout";
 
 function App() {
-  return <PlanetCard
-    image='https://example.com/image.jpg'
-    name="Jupiter"
-    distance={227.9}
-
-  />;
+  return <Layout />;
 }
 
 export default App;
