@@ -1,29 +1,36 @@
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
 .planetCard {
   font-family: "Inter", sans-serif;
-}
-
-figure {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10rem;
+  background-color: var(--color-white);
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   width: 100%;
-  max-width: 386px;
-  height: 340px;
 }
 
-figure img {
-  width: 387px;
-  height: 252px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+.planetCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
 }
 
-figcaption,
-figure p {
-  line-height: 150%;
+.planetCard figcaption {
+  padding: 12px 16px;
+  text-align: center;
+}
+
+.planetCard figcaption p:first-child {
+  font-size: 14px;
   font-weight: 600;
+  color: var(--color-text-dark);
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.planetCard figcaption p:last-child {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  line-height: 1.5;
 }
