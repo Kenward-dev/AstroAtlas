@@ -1,0 +1,36 @@
+.planet-table-container {
+  padding: 20px;
+}
+
+.planet-table-container h2 {
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+}
+
+.planet-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.planet-table th,
+.planet-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.planet-table th {
+  background-color: #1a1a2e;
+  color: white;
+}
+
+.planet-table td {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.planet-table .classification {
+  font-weight: bold;
+  text-align: center;
+  background-color: #e8e8f0;
+}

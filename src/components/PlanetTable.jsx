@@ -1,3 +1,4 @@
+import "./PlanetTable.css";
 const planets = [
   {
     classification: "Terrestrial",
@@ -81,14 +82,9 @@ const planets = [
 
 function PlanetTable() {
   return (
-    <div style={{ padding: "20px" }}>
+    <div className="planet-table-container">
       <h2>Planetary Facts Table</h2>
-      <table
-        border="1"
-        cellPadding="8"
-        cellSpacing="0"
-        style={{ width: "100%", borderCollapse: "collapse" }}
-      >
+      <table className="planet-table">
         <thead>
           <tr>
             <th>Classification</th>
@@ -104,10 +100,7 @@ function PlanetTable() {
             group.planets.map((planet, index) => (
               <tr key={planet.name}>
                 {index === 0 && (
-                  <td
-                    rowSpan={group.planets.length}
-                    style={{ fontWeight: "bold", textAlign: "center" }}
-                  >
+                  <td rowSpan={group.planets.length} className="classification">
                     {group.classification}
                   </td>
                 )}
