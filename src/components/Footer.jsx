@@ -28,8 +28,8 @@ export default function Footer() {
             lineHeight: "1.6",
           }}
         >
-          AstroAtlas is built by a passionate team of developers from TS Academy —
-          Victor, Chinemerem, Doxi, Duke, Josh, Kenward, Marie & Tobi.
+          AstroAtlas is built by a passionate team of developers from TS Academy
+          — Victor, Chinemerem, Doxi, Duke, Josh, Kenward, Marie & Tobi.
         </p>
       </div>
 
