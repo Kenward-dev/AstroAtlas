@@ -7,7 +7,7 @@ Built collaboratively as a capstone project for TS Academy.
 | Name | GitHub | Role |
 |------|--------|------|
 | Kenward | [@Kenward-dev](https://github.com/Kenward-dev) | Team Lead |
-|  |  |
+| Tobi | [@Toby-Morgan1](https://github.com/Toby-Morgan1) | Developer |
 |  |  |
 |  |  |
 
@@ -20,6 +20,7 @@ Built collaboratively as a capstone project for TS Academy.
 | PlanetCard | src/components/PlanetCard.jsx |  |
 | PlanetSection | src/components/PlanetSection.jsx |  |
 | VideoSection | src/components/VideoSection.jsx |  |
+| PlanetTable | src/components/PlanetTable.jsx | Tobi |
 | ContactForm | src/components/ContactForm.jsx |  |
 | Footer | src/components/Footer.jsx |  |
 
