@@ -28,25 +28,79 @@ const planetStats = [
   {
     classification: "Terrestrial",
     planets: [
-      { name: "Mercury", mass: "0.330", diameter: "4,879", density: "5427", gravity: "3.7" },
-      { name: "Venus", mass: "4.87", diameter: "12,104", density: "5243", gravity: "8.9" },
-      { name: "Earth", mass: "5.97", diameter: "12,756", density: "5514", gravity: "9.8" },
-      { name: "Mars", mass: "0.642", diameter: "6,792", density: "3933", gravity: "3.7" },
+      {
+        name: "Mercury",
+        mass: "0.330",
+        diameter: "4,879",
+        density: "5427",
+        gravity: "3.7",
+      },
+      {
+        name: "Venus",
+        mass: "4.87",
+        diameter: "12,104",
+        density: "5243",
+        gravity: "8.9",
+      },
+      {
+        name: "Earth",
+        mass: "5.97",
+        diameter: "12,756",
+        density: "5514",
+        gravity: "9.8",
+      },
+      {
+        name: "Mars",
+        mass: "0.642",
+        diameter: "6,792",
+        density: "3933",
+        gravity: "3.7",
+      },
     ],
   },
   {
     classification: "Jovian",
     planets: [
-      { name: "Jupiter", mass: "1898", diameter: "142,984", density: "1326", gravity: "23.1" },
-      { name: "Saturn", mass: "568", diameter: "120,536", density: "687", gravity: "9.0" },
-      { name: "Uranus", mass: "86.8", diameter: "51,118", density: "1271", gravity: "8.7" },
-      { name: "Neptune", mass: "102", diameter: "49,528", density: "1638", gravity: "11.0" },
+      {
+        name: "Jupiter",
+        mass: "1898",
+        diameter: "142,984",
+        density: "1326",
+        gravity: "23.1",
+      },
+      {
+        name: "Saturn",
+        mass: "568",
+        diameter: "120,536",
+        density: "687",
+        gravity: "9.0",
+      },
+      {
+        name: "Uranus",
+        mass: "86.8",
+        diameter: "51,118",
+        density: "1271",
+        gravity: "8.7",
+      },
+      {
+        name: "Neptune",
+        mass: "102",
+        diameter: "49,528",
+        density: "1638",
+        gravity: "11.0",
+      },
     ],
   },
   {
     classification: "Dwarf",
     planets: [
-      { name: "Pluto", mass: "0.0130", diameter: "2,376", density: "2095", gravity: "0.7" },
+      {
+        name: "Pluto",
+        mass: "0.0130",
+        diameter: "2,376",
+        density: "2095",
+        gravity: "0.7",
+      },
     ],
   },
 ];
@@ -63,8 +117,12 @@ export default function PlanetTable() {
       .finally(() => setLoading(false));
   }, []);
 
-  if (loading) return <p className="planet-table__status">Loading planets...</p>;
-  if (error) return <p className="planet-table__status">Something went wrong: {error}</p>;
+  if (loading)
+    return <p className="planet-table__status">Loading planets...</p>;
+  if (error)
+    return (
+      <p className="planet-table__status">Something went wrong: {error}</p>
+    );
 
   return (
     <div className="planet-table-container">
@@ -89,7 +147,10 @@ export default function PlanetTable() {
               return (
                 <tr key={planet.name}>
                   {index === 0 && (
-                    <td rowSpan={group.planets.length} className="classification">
+                    <td
+                      rowSpan={group.planets.length}
+                      className="classification"
+                    >
                       {group.classification}
                     </td>
                   )}
