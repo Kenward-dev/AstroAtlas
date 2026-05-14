@@ -1,0 +1,35 @@
+.planet-section {
+  background-color: var(--color-light);
+  padding: var(--section-padding);
+}
+
+.planet-section__container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.planet-section__header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.planet-section__title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+}
+
+.planet-section__subtitle {
+  font-size: 15px;
+  color: var(--color-text-muted);
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.planet-section__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
