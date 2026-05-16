@@ -94,3 +94,16 @@ input {
   content: "100 characters";
   color: red;
 }
+
+.characterText {
+  font-size: 14px;
+  margin-top: 6px;
+  color: #6b7280;
+  font-weight: 400;
+}
+
+.submitMessage {
+  color: green;
+  margin-top: 20px;
+  font-weight: 600;
+}

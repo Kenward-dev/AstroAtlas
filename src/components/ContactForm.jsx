@@ -10,19 +10,24 @@ export default function ContactForm() {
   });
 
   function handleChange(e) {
-    e.preventDefault();
     const { name, value } = e.target;
 
     setFormData((prev) => ({
       ...prev,
       [name]: value,
     }));
+  }
 
-    console.log(formData);
+  const [submitMessage, setSubmitMessage] = React.useState("");
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    setSubmitMessage("Form submitted successfully!");
   }
 
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <div className="formDetails">
         <h1 className="formHeading">Have Questions About Planetary Science?</h1>
 
@@ -37,25 +42,25 @@ export default function ContactForm() {
 
       <div className="formInput">
         <div className="flexGroup">
-          <label htmlFor="">
+          <label htmlFor="fullName">
             Full Name <span className="asterics">*</span>
             <input
               type="text"
               name="fullName"
               value={formData.fullName}
-              id=""
+              id="fullName"
               placeholder="Full name"
               required
               onChange={handleChange}
             />
           </label>
-          <label htmlFor="">
+          <label htmlFor="email">
             Email<span className="asterics">*</span>
             <input
               type="email"
               name="email"
               value={formData.email}
-              id=""
+              id="email"
               placeholder="example@example.com"
               required
               onChange={handleChange}
@@ -64,34 +69,37 @@ export default function ContactForm() {
         </div>
 
         <div className="flexGroup second">
-          <label htmlFor="">
+          <label htmlFor="phone">
             Phone Number<span className="asterics">*</span>
             <input
-              type="number"
+              type="tel"
               name="phone"
               value={formData.phone}
-              id=""
+              id="phone"
               placeholder="Please enter a valid phone number."
               required
               onChange={handleChange}
             />
           </label>
 
-          <label htmlFor="">
+          <label htmlFor="message">
             Message<span className="asterics">*</span>
             <input
               type="text"
               name="message"
               value={formData.message}
-              id=""
+              id="message"
               className="message"
               placeholder="Enter your message"
               required
               onChange={handleChange}
             />
+            <p className="characterText">100 characters</p>
           </label>
         </div>
       </div>
+
+      {submitMessage && <p className="submitMessage">{submitMessage}</p>}
 
       <button type="submit" className="submitBtn">
         Submit &nbsp; &gt;
