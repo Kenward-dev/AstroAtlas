@@ -4,35 +4,26 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__about">
-        <h3 className="footer__title">About the Team</h3>
+        <h3 className="footer__title">About</h3>
         <p className="footer__description">
-          AstroAtlas is built by a passionate team of developers from TS Academy
-          — Victor, Chinemerem, Doxi, Duke, Josh, Kenward, Marie & Tobi.
+          Victor, Chinemerem, Doxi, Duke, Josh, Kenward, Marie & Tobi
         </p>
       </div>
 
-      <div className="footer__links">
+      <div className="footer__bottom">
+        <p className="footer__copyright">
+          ©2026 Design by Amaka & Ifeoma A. <br />
+          Built by GroupName. All rights reserved
+        </p>
         <a
           href="https://tsacademyonline.com/"
           target="_blank"
           rel="noreferrer"
           className="footer__link"
         >
-          TS Academy
-        </a>
-        <a
-          href="https://github.com/Kenward-dev/AstroAtlas"
-          target="_blank"
-          rel="noreferrer"
-          className="footer__link"
-        >
-          GitHub Repo
+          TSAcademy
         </a>
       </div>
-
-      <p className="footer__copyright">
-        © {new Date().getFullYear()} AstroAtlas · TS Academy
-      </p>
     </footer>
   );
 }

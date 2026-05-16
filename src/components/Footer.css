@@ -2,7 +2,10 @@
   background-color: #0f172a;
   color: #94a3b8;
   padding: 40px 24px;
-  text-align: center;
+}
+
+.footer__about {
+  margin-bottom: 24px;
 }
 
 .footer__title {
@@ -13,28 +16,23 @@
 
 .footer__description {
   font-size: 14px;
-  max-width: 500px;
-  margin: 0 auto;
-  line-height: 1.6;
 }
 
-.footer__links {
+.footer__bottom {
   display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 24px;
+  justify-content: space-between;
+  align-items: flex-end;
   flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer__copyright {
+  font-size: 12px;
+  line-height: 1.6;
 }
 
 .footer__link {
   color: #38bdf8;
   text-decoration: none;
   font-size: 14px;
-}
-
-.footer__copyright {
-  font-size: 12px;
-}
-.footer__about {
-  margin-bottom: 24px;
 }
