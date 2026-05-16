@@ -1,32 +1,8 @@
-import { useState, useEffect } from "react";
-import { fetchPlanets } from "../services/planetService";
 import "./PlanetTable.css";
-
-import mercury from "../assets/mercury.jpeg";
-import venus from "../assets/venus.jpeg";
-import earth from "../assets/earth.jpeg";
-import mars from "../assets/mars.jpeg";
-import jupiter from "../assets/jupiter.png";
-import saturn from "../assets/saturn.jpeg";
-import uranus from "../assets/uranus.jpg";
-import neptune from "../assets/neptune.jpeg";
-import pluto from "../assets/pluto.jpg";
-
-const planetImages = {
-  Mercury: mercury,
-  Venus: venus,
-  Earth: earth,
-  Mars: mars,
-  Jupiter: jupiter,
-  Saturn: saturn,
-  Uranus: uranus,
-  Neptune: neptune,
-  Pluto: pluto,
-};
 
 const planetStats = [
   {
-    classification: "Terrestrial",
+    classification: "Terrestrial Planets",
     planets: [
       {
         name: "Mercury",
@@ -59,7 +35,7 @@ const planetStats = [
     ],
   },
   {
-    classification: "Jovian",
+    classification: "Jovian Planets",
     planets: [
       {
         name: "Jupiter",
@@ -92,7 +68,7 @@ const planetStats = [
     ],
   },
   {
-    classification: "Dwarf",
+    classification: "Dwarf Planets",
     planets: [
       {
         name: "Pluto",
@@ -106,45 +82,33 @@ const planetStats = [
 ];
 
 export default function PlanetTable() {
-  const [planets, setPlanets] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    fetchPlanets()
-      .then((data) => setPlanets(data))
-      .catch((err) => setError(err.message))
-      .finally(() => setLoading(false));
-  }, []);
-
-  if (loading)
-    return <p className="planet-table__status">Loading planets...</p>;
-  if (error)
-    return (
-      <p className="planet-table__status">Something went wrong: {error}</p>
-    );
-
   return (
-    <div className="planet-table-container">
-      <h2>Planetary Facts Table</h2>
-      <table className="planet-table">
-        <thead>
-          <tr>
-            <th>Classification</th>
-            <th>Image</th>
-            <th>Planet</th>
-            <th>Mass (10²⁴ kg)</th>
-            <th>Diameter (km)</th>
-            <th>Density (kg/m³)</th>
-            <th>Gravity (m/s²)</th>
-            <th>Distance from Sun (million km)</th>
-          </tr>
-        </thead>
-        <tbody>
-          {planetStats.map((group) =>
-            group.planets.map((planet, index) => {
-              const apiPlanet = planets.find((p) => p.planet === planet.name);
-              return (
+    <section className="planet-table-section">
+      <div className="planet-table-container">
+        <h2 className="planet-table__title">Planetary Facts at a Glance</h2>
+        <p className="planet-table__subtitle">
+          Below is a comparative table of major planets in our solar system. The
+          data highlights key physical properties used by astronomers and
+          researchers worldwide.
+        </p>
+        <p className="planet-table__caption">
+          Data about the planets of our solar system (Planetary facts taken from
+          NASA)
+        </p>
+        <table className="planet-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Name</th>
+              <th>Mass (10 24kg)</th>
+              <th>Diameter (km)</th>
+              <th>Density (kg/m3)</th>
+              <th>Gravity (m/s2)</th>
+            </tr>
+          </thead>
+          <tbody>
+            {planetStats.map((group) =>
+              group.planets.map((planet, index) => (
                 <tr key={planet.name}>
                   {index === 0 && (
                     <td
@@ -154,25 +118,17 @@ export default function PlanetTable() {
                       {group.classification}
                     </td>
                   )}
-                  <td>
-                    <img
-                      src={planetImages[planet.name]}
-                      alt={planet.name}
-                      className="planet-table__img"
-                    />
-                  </td>
                   <td>{planet.name}</td>
                   <td>{planet.mass}</td>
                   <td>{planet.diameter}</td>
                   <td>{planet.density}</td>
                   <td>{planet.gravity}</td>
-                  <td>{apiPlanet ? apiPlanet.distanceFromSun : "—"}</td>
                 </tr>
-              );
-            })
-          )}
-        </tbody>
-      </table>
-    </div>
+              ))
+            )}
+          </tbody>
+        </table>
+      </div>
+    </section>
   );
 }
