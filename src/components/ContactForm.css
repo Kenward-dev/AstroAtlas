@@ -1,0 +1,109 @@
+form {
+  width: 100%;
+  min-width: 1439px;
+  padding: 100px;
+  height: 100%;
+  min-height: 684.94px;
+}
+
+.formHeading {
+  color: #164baf;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: -2%;
+}
+
+.formDetails {
+  width: 904px;
+  height: 87px;
+}
+
+.formInput {
+  margin-top: 24px;
+  height: 100%;
+  min-height: 251.94px;
+  width: 100%;
+  min-width: 1200px;
+}
+
+.formText {
+  line-height: 150%;
+}
+
+label,
+input {
+  display: block;
+}
+
+.flexGroup {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.flexGroup input {
+  width: 588px;
+  height: 63px;
+  border-radius: 8px;
+  padding: 8px 16px 8px 16px;
+  border: 1px solid #c7c7c7;
+  margin-top: 8px;
+}
+
+.flexGroup label {
+  font-weight: 600;
+  position: relative;
+}
+
+.asterics {
+  color: red;
+}
+
+.second {
+  margin-top: 24px;
+}
+
+.text-wrap {
+  display: block;
+}
+
+.submitBtn {
+  background-color: #164baf;
+  padding: 20px 24px 20px 24px;
+  border-radius: 8px;
+  color: #ffff;
+  width: 337px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 600;
+  border: none;
+  margin-top: 48px;
+}
+
+::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.message::after {
+  content: "100 characters";
+  color: red;
+}
+
+.characterText {
+  font-size: 14px;
+  margin-top: 6px;
+  color: #6b7280;
+  font-weight: 400;
+}
+
+.submitMessage {
+  color: green;
+  margin-top: 20px;
+  font-weight: 600;
+}
