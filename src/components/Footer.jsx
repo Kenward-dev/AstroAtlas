@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="footer__bottom">
         <p className="footer__copyright">
           ©2026 Design by Amaka & Ifeoma A. <br />
-          Built by GroupName. All rights reserved
+          Built by TS Academy Capstone Project Group 19. All rights reserved
         </p>
         <a
           href="https://tsacademyonline.com/"
