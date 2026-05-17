@@ -80,7 +80,7 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} noValidate>
-      <div className="formDetails">
+      <div className="formDetails" id="contact">
         <h1 className="formHeading">Have Questions About Planetary Science?</h1>
         <p className="formText">
           Interested in learning more about space, astronomy, or how planetary

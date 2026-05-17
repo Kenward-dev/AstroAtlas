@@ -3,10 +3,12 @@ import Header from "./components/Header";
 import PlanetSection from "./components/PlanetSection";
 import PlanetTable from "./components/PlanetTable";
 import ContactForm from "./components/ContactForm";
+import Hero from "./components/Hero";
 
 function App() {
   return (
     <Layout>
+      <Hero />
       <Header />
       <PlanetSection />
       <PlanetTable />
