@@ -107,3 +107,20 @@ input {
   margin-top: 20px;
   font-weight: 600;
 }
+
+.errorText {
+  color: #ef4444;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 4px;
+  display: block;
+}
+
+.submitBtn {
+  cursor: pointer;
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
