@@ -5,8 +5,8 @@ import PlanetSection from "./components/PlanetSection";
 function App() {
   return (
     <Layout>
-      <Header/>
-      <PlanetSection/>
+      <Header />
+      <PlanetSection />
     </Layout>
   );
 }
