@@ -7,6 +7,7 @@ Built collaboratively as a capstone project for TS Academy.
 | Name | GitHub | Role |
 |------|--------|------|
 | Kenward | [@Kenward-dev](https://github.com/Kenward-dev) | Team Lead |
+| Mary | [@marie-toni](https://github.com/marie-toni) | Developer |
 | Tobi | [@Toby-Morgan1](https://github.com/Toby-Morgan1) | Developer |
 |  |  |
 |  |  |
@@ -15,7 +16,7 @@ Built collaboratively as a capstone project for TS Academy.
 | Component | File | Built by |
 |-----------|------|----------|
 | Layout | src/components/Layout.jsx | Kenward |
-| Header | src/components/Header.jsx |  |
+| Header | src/components/Header.jsx | Mary |
 | Hero | src/components/Hero.jsx |  |
 | PlanetCard | src/components/PlanetCard.jsx |  |
 | PlanetSection | src/components/PlanetSection.jsx |  |
