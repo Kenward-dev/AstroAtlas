@@ -28,7 +28,7 @@ export default function ContactForm() {
 
     if (!formData.phone.trim()) {
       newErrors.phone = "Phone number is required";
-    } else if (/^\+?[0-9\s-]{7,15}$/.test(formData.phone)) {
+    } else if (!/^\+?[0-9\s-]{7,15}$/.test(formData.phone)) {
       newErrors.phone = "Enter a valid phone number";
     }
 
