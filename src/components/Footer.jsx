@@ -9,7 +9,7 @@ export default function Footer() {
           Victor, Chinemerem, Doxi, Duke, Josh, Kenward, Marie & Tobi
         </p>
       </div>
-
+      <hr className="footer__divider" />
       <div className="footer__bottom">
         <p className="footer__copyright">
           ©2026 Design by Amaka & Ifeoma A. <br />

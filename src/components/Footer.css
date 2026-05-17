@@ -36,3 +36,8 @@
   text-decoration: none;
   font-size: 14px;
 }
+.footer__divider {
+  border: none;
+  border-top: 1px solid #1e293b;
+  margin: 24px 0;
+}
