@@ -1,0 +1,134 @@
+import "./PlanetTable.css";
+
+const planetStats = [
+  {
+    classification: "Terrestrial Planets",
+    planets: [
+      {
+        name: "Mercury",
+        mass: "0.330",
+        diameter: "4,879",
+        density: "5427",
+        gravity: "3.7",
+      },
+      {
+        name: "Venus",
+        mass: "4.87",
+        diameter: "12,104",
+        density: "5243",
+        gravity: "8.9",
+      },
+      {
+        name: "Earth",
+        mass: "5.97",
+        diameter: "12,756",
+        density: "5514",
+        gravity: "9.8",
+      },
+      {
+        name: "Mars",
+        mass: "0.642",
+        diameter: "6,792",
+        density: "3933",
+        gravity: "3.7",
+      },
+    ],
+  },
+  {
+    classification: "Jovian Planets",
+    planets: [
+      {
+        name: "Jupiter",
+        mass: "1898",
+        diameter: "142,984",
+        density: "1326",
+        gravity: "23.1",
+      },
+      {
+        name: "Saturn",
+        mass: "568",
+        diameter: "120,536",
+        density: "687",
+        gravity: "9.0",
+      },
+      {
+        name: "Uranus",
+        mass: "86.8",
+        diameter: "51,118",
+        density: "1271",
+        gravity: "8.7",
+      },
+      {
+        name: "Neptune",
+        mass: "102",
+        diameter: "49,528",
+        density: "1638",
+        gravity: "11.0",
+      },
+    ],
+  },
+  {
+    classification: "Dwarf Planets",
+    planets: [
+      {
+        name: "Pluto",
+        mass: "0.0130",
+        diameter: "2,376",
+        density: "2095",
+        gravity: "0.7",
+      },
+    ],
+  },
+];
+
+export default function PlanetTable() {
+  return (
+    <section className="planet-table-section">
+      <div className="planet-table-container">
+        <h2 className="planet-table__title">Planetary Facts at a Glance</h2>
+        <p className="planet-table__subtitle">
+          Below is a comparative table of major planets in our solar system. The
+          data highlights key physical properties used by astronomers and
+          researchers worldwide.
+        </p>
+        <p className="planet-table__caption">
+          Data about the planets of our solar system (Planetary facts taken from
+          NASA)
+        </p>
+        <table className="planet-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Name</th>
+              <th>Mass (10 24kg)</th>
+              <th>Diameter (km)</th>
+              <th>Density (kg/m3)</th>
+              <th>Gravity (m/s2)</th>
+            </tr>
+          </thead>
+          <tbody>
+            {planetStats.map((group) =>
+              group.planets.map((planet, index) => (
+                <tr key={planet.name}>
+                  {index === 0 && (
+                    <td
+                      rowSpan={group.planets.length}
+                      className="classification"
+                    >
+                      {group.classification}
+                    </td>
+                  )}
+                  <td>{planet.name}</td>
+                  <td>{planet.mass}</td>
+                  <td>{planet.diameter}</td>
+                  <td>{planet.density}</td>
+                  <td>{planet.gravity}</td>
+                </tr>
+              ))
+            )}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
