@@ -1,4 +1,5 @@
 import "./Hero.css";
+import globe from "../assets/globe.png";
 
 function Hero() {
   function handleExploreClick() {
@@ -35,7 +36,7 @@ function Hero() {
           </div>
         </div>
         <div className="hero__image">
-          <img src="/planet-hero.png" alt="Planet earth from space" />
+          <img src={globe} alt="Globe" />
         </div>
       </div>
     </section>
