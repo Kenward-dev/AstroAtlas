@@ -8,8 +8,8 @@ import Hero from "./components/Hero";
 function App() {
   return (
     <Layout>
-      <Hero />
       <Header />
+      <Hero />
       <PlanetSection />
       <PlanetTable />
       <ContactForm />

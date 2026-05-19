@@ -35,7 +35,7 @@ function Hero() {
           </div>
         </div>
         <div className="hero__image">
-          <img src="/planet-hero.png" alt="Planet earth from space" />
+          <img src="https://raw.githubusercontent.com/Doxxxxie/IMAGES-FOR-CAPSTONE-PROJECT/main/075cfe8711f093d2ee4330cfa37d385003066f0a%20(1).png" alt="Planet earth from space" />
         </div>
       </div>
     </section>
