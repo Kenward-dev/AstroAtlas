@@ -1,30 +1,28 @@
 form {
   width: 100%;
-  min-width: 1439px;
-  padding: 100px;
-  height: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--section-padding);
   min-height: 684.94px;
+  box-sizing: border-box;
 }
 
 .formHeading {
   color: #164baf;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 32px;
   line-height: 150%;
   letter-spacing: -2%;
 }
 
 .formDetails {
-  width: 904px;
-  height: 87px;
+  max-width: 904px;
 }
 
 .formInput {
   margin-top: 24px;
-  height: 100%;
   min-height: 251.94px;
   width: 100%;
-  min-width: 1200px;
 }
 
 .formText {
@@ -39,16 +37,21 @@ input {
 .flexGroup {
   display: flex;
   gap: 24px;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.flexGroup > label {
+  flex: 1;
 }
 
 .flexGroup input {
-  width: 588px;
+  width: 100%;
   height: 63px;
   border-radius: 8px;
-  padding: 8px 16px 8px 16px;
+  padding: 8px 16px;
   border: 1px solid #c7c7c7;
   margin-top: 8px;
+  box-sizing: border-box;
 }
 
 .flexGroup label {
@@ -69,10 +72,10 @@ input {
 }
 
 .submitBtn {
-  background-color: #164baf;
-  padding: 20px 24px 20px 24px;
+  background-color: var(--color-primary);
+  padding: 20px 24px;
   border-radius: 8px;
-  color: #ffff;
+  color: var(--color-white);
   width: 337px;
   height: 50px;
   font-size: 18px;
@@ -83,16 +86,17 @@ input {
   font-weight: 600;
   border: none;
   margin-top: 48px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.submitBtn:hover {
+  opacity: 0.9;
 }
 
 ::placeholder {
   font-size: 16px;
   font-weight: 400;
-}
-
-.message::after {
-  content: "100 characters";
-  color: red;
 }
 
 .characterText {
@@ -116,11 +120,21 @@ input {
   display: block;
 }
 
-.submitBtn {
-  cursor: pointer;
-}
-
 .submitBtn:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .flexGroup {
+    flex-direction: column;
+  }
+
+  .submitBtn {
+    width: 100%;
+  }
+
+  .formHeading {
+    font-size: 28px;
+  }
 }

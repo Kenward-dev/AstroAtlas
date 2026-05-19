@@ -5,6 +5,7 @@ import PlanetTable from "./components/PlanetTable";
 import ContactForm from "./components/ContactForm";
 import Hero from "./components/Hero";
 import VideoSection from "./components/VideoSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <PlanetSection />
       <PlanetTable />
       <ContactForm />
+      <Footer />
     </Layout>
   );
 }
