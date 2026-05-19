@@ -16,10 +16,8 @@ Built collaboratively as a capstone project for TS Academy.
 | Component | File | Built by |
 |-----------|------|----------|
 | Layout | src/components/Layout.jsx | Kenward |
-| Header | src/components/Header.jsx |  |
-| Hero | src/components/Hero.jsx | Kenward |
 | Header | src/components/Header.jsx | Mary |
-| Hero | src/components/Hero.jsx |  |
+| Hero | src/components/Hero.jsx | Kenward |
 | PlanetCard | src/components/PlanetCard.jsx |  |
 | PlanetSection | src/components/PlanetSection.jsx |  |
 | VideoSection | src/components/VideoSection.jsx |  |
