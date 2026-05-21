@@ -33,3 +33,26 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .planet-section {
+    padding: 80px 32px;
+  }
+
+  .planet-section__header {
+    margin-bottom: 40px;
+  }
+
+  .planet-section__title {
+    font-size: 24px;
+  }
+
+  .planet-section__subtitle {
+    font-size: 14px;
+    max-width: 560px;
+  }
+
+  .planet-section__grid {
+    gap: 20px;
+  }
+}

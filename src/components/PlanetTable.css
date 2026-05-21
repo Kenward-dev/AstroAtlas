@@ -70,3 +70,28 @@
   color: var(--color-text-muted);
   font-family: var(--font-main);
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .planet-table-section {
+    padding: 80px 32px;
+  }
+
+  .planet-table__title {
+    font-size: 1.75rem;
+  }
+
+  .planet-table__subtitle {
+    font-size: 0.95rem;
+    max-width: 540px;
+  }
+
+  .planet-table th,
+  .planet-table td {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  .planet-table__caption {
+    font-size: 0.8rem;
+  }
+}

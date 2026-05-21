@@ -74,3 +74,40 @@
   max-width: 460px;
   object-fit: contain;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    padding: 80px 32px;
+  }
+
+  .hero__container {
+    gap: 32px;
+  }
+
+  .hero__content {
+    max-width: 450px;
+  }
+
+  .hero__title {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .hero__subtitle {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .hero__actions {
+    gap: 12px;
+  }
+
+  .hero__btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+
+  .hero__image img {
+    max-width: 360px;
+  }
+}

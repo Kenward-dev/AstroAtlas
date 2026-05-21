@@ -125,16 +125,42 @@ input {
   cursor: not-allowed;
 }
 
-@media (max-width: 768px) {
-  .flexGroup {
-    flex-direction: column;
-  }
-
-  .submitBtn {
-    width: 100%;
+@media (min-width: 768px) and (max-width: 1024px) {
+  form {
+    padding: 80px 32px;
+    min-height: auto;
   }
 
   .formHeading {
     font-size: 28px;
   }
+
+  .formDetails {
+    max-width: 760px;
+  }
+
+  .formText {
+    font-size: 15px;
+  }
+
+  .flexGroup {
+    gap: 16px;
+  }
+
+  .flexGroup input {
+    height: 56px;
+    font-size: 14px;
+  }
+
+  ::placeholder {
+    font-size: 14px;
+  }
+
+  .submitBtn {
+    width: 280px;
+    height: 48px;
+    font-size: 16px;
+    margin-top: 40px;
+  }
 }
+
