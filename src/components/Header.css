@@ -67,3 +67,35 @@
     height: 28px;
   }
 }
+
+@media (max-width: 767px) {
+  .header {
+    padding: 16px 20px;
+  }
+
+  .header__container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .header__logo {
+    font-size: 16px;
+    justify-content: center;
+  }
+
+  .header__logo img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .header__nav {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header__nav a {
+    font-size: 13px;
+  }
+}

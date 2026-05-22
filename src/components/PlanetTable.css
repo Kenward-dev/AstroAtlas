@@ -95,3 +95,32 @@
     font-size: 0.8rem;
   }
 }
+
+@media (max-width: 767px) {
+  .planet-table-section {
+    padding: 48px 20px;
+  }
+
+  .planet-table-container {
+    overflow-x: auto;
+  }
+
+  .planet-table {
+    min-width: 600px;
+  }
+
+  .planet-table__title {
+    font-size: 24px;
+  }
+
+  .planet-table__subtitle {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .planet-table th,
+  .planet-table td {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}
