@@ -33,4 +33,4 @@ Built collaboratively as a capstone project for TS Academy.
 4. Run `npm run dev`
 
 ## Live URL
-<!-- Add after deployment -->
+[AstroAtlas Live Site](https://astro-atlas-bhkqzerf9-kenwards-projects.vercel.app/)
