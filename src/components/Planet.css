@@ -34,3 +34,21 @@
   color: var(--color-text-muted);
   line-height: 1.5;
 }
+
+@media (max-width: 767px) {
+  .planetCard img {
+    height: 140px;
+  }
+
+  .planetCard figcaption {
+    padding: 10px 12px;
+  }
+
+  .planetCard figcaption p:first-child {
+    font-size: 13px;
+  }
+
+  .planetCard figcaption p:last-child {
+    font-size: 12px;
+  }
+}

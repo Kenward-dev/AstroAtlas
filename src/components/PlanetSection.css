@@ -35,10 +35,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .planet-section {
-    padding: 80px 32px;
-  }
-
   .planet-section__header {
     margin-bottom: 40px;
   }
@@ -54,5 +50,27 @@
 
   .planet-section__grid {
     gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .planet-section__header {
+    margin-bottom: 28px;
+  }
+
+  .planet-section__title {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .planet-section__subtitle {
+    font-size: 13px;
+    max-width: 100%;
+  }
+
+  .planet-section__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 }
