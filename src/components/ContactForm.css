@@ -1,0 +1,215 @@
+form {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--section-padding);
+  min-height: 684.94px;
+  box-sizing: border-box;
+}
+
+.formHeading {
+  color: #164baf;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+}
+
+.formDetails {
+  max-width: 904px;
+}
+
+.formInput {
+  margin-top: 24px;
+  min-height: 251.94px;
+  width: 100%;
+}
+
+.formText {
+  line-height: 150%;
+}
+
+label,
+input {
+  display: block;
+}
+
+.flexGroup {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.flexGroup > label {
+  flex: 1;
+}
+
+.flexGroup input {
+  width: 100%;
+  height: 63px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: 1px solid #c7c7c7;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
+
+.flexGroup label {
+  font-weight: 600;
+  position: relative;
+}
+
+.asterics {
+  color: red;
+}
+
+.second {
+  margin-top: 24px;
+}
+
+.text-wrap {
+  display: block;
+}
+
+.submitBtn {
+  background-color: var(--color-primary);
+  padding: 20px 24px;
+  border-radius: 8px;
+  color: var(--color-white);
+  width: 337px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 600;
+  border: none;
+  margin-top: 48px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.submitBtn:hover {
+  opacity: 0.9;
+}
+
+::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.characterText {
+  font-size: 14px;
+  margin-top: 6px;
+  color: #6b7280;
+  font-weight: 400;
+}
+
+.submitMessage {
+  color: green;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.errorText {
+  color: #ef4444;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 4px;
+  display: block;
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  form {
+    min-height: auto;
+  }
+
+  .formHeading {
+    font-size: 28px;
+  }
+
+  .formDetails {
+    max-width: 760px;
+  }
+
+  .formText {
+    font-size: 15px;
+  }
+
+  .flexGroup {
+    gap: 16px;
+  }
+
+  .flexGroup input {
+    height: 56px;
+    font-size: 14px;
+  }
+
+  ::placeholder {
+    font-size: 14px;
+  }
+
+  .submitBtn {
+    width: 280px;
+    height: 48px;
+    font-size: 16px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  form {
+    min-height: auto;
+  }
+
+  .formHeading {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .formText {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .formInput {
+    margin-top: 20px;
+    min-height: auto;
+  }
+
+  .flexGroup {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .flexGroup > label {
+    width: 100%;
+  }
+
+  .flexGroup input {
+    height: 52px;
+    font-size: 14px;
+  }
+
+  ::placeholder {
+    font-size: 14px;
+  }
+
+  .submitBtn {
+    width: 100%;
+    height: 52px;
+    font-size: 16px;
+    margin-top: 32px;
+    align-items: center;
+  }
+
+  .characterText {
+    font-size: 13px;
+  }
+}
