@@ -44,3 +44,86 @@
 .header__nav a:hover {
   opacity: 1;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    padding: 14px 32px;
+  }
+
+  .header__nav {
+    gap: 20px;
+  }
+
+  .header__nav a {
+    font-size: 13px;
+  }
+
+  .header__logo {
+    font-size: 16px;
+  }
+
+  .header__logo img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 14px 20px;
+  }
+
+  .header__logo {
+    font-size: 15px;
+  }
+
+  .header__logo img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__nav--open {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    background-color: var(--color-dark);
+    padding: 12px 20px 20px;
+    z-index: 99;
+  }
+
+  .header__nav--open a {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 15px;
+    opacity: 0.9;
+  }
+
+  .header__toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+
+  .header__toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: var(--color-white);
+    border-radius: 2px;
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease;
+  }
+}

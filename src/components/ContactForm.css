@@ -12,7 +12,7 @@ form {
   font-weight: 800;
   font-size: 32px;
   line-height: 150%;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em;
 }
 
 .formDetails {
@@ -125,16 +125,91 @@ input {
   cursor: not-allowed;
 }
 
-@media (max-width: 768px) {
-  .flexGroup {
-    flex-direction: column;
-  }
-
-  .submitBtn {
-    width: 100%;
+@media (min-width: 768px) and (max-width: 1024px) {
+  form {
+    min-height: auto;
   }
 
   .formHeading {
     font-size: 28px;
+  }
+
+  .formDetails {
+    max-width: 760px;
+  }
+
+  .formText {
+    font-size: 15px;
+  }
+
+  .flexGroup {
+    gap: 16px;
+  }
+
+  .flexGroup input {
+    height: 56px;
+    font-size: 14px;
+  }
+
+  ::placeholder {
+    font-size: 14px;
+  }
+
+  .submitBtn {
+    width: 280px;
+    height: 48px;
+    font-size: 16px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  form {
+    min-height: auto;
+  }
+
+  .formHeading {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .formText {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .formInput {
+    margin-top: 20px;
+    min-height: auto;
+  }
+
+  .flexGroup {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .flexGroup > label {
+    width: 100%;
+  }
+
+  .flexGroup input {
+    height: 52px;
+    font-size: 14px;
+  }
+
+  ::placeholder {
+    font-size: 14px;
+  }
+
+  .submitBtn {
+    width: 100%;
+    height: 52px;
+    font-size: 16px;
+    margin-top: 32px;
+    align-items: center;
+  }
+
+  .characterText {
+    font-size: 13px;
   }
 }
