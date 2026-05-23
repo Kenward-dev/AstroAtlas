@@ -9,7 +9,7 @@ Built collaboratively as a capstone project for TS Academy.
 | Kenward | [@Kenward-dev](https://github.com/Kenward-dev) | Team Lead |
 | Mary | [@marie-toni](https://github.com/marie-toni) | Developer |
 | Tobi | [@Toby-Morgan1](https://github.com/Toby-Morgan1) | Developer |
-|  |  |
+| PlanetCard | src/components/PlanetCard.jsx | Micah |
 |  |  |
 
 ## Components / Services
@@ -25,6 +25,7 @@ Built collaboratively as a capstone project for TS Academy.
 | ContactForm | src/components/ContactForm.jsx |  |
 | Footer | src/components/Footer.jsx |  |
 | Services | src/services/planetService.js | Kenward |
+| Responsive design | src/components/*.css | Kenward |
 
 ## Running Locally
 1. Clone the repo
