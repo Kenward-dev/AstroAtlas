@@ -9,8 +9,7 @@ Built collaboratively as a capstone project for TS Academy.
 | Kenward | [@Kenward-dev](https://github.com/Kenward-dev) | Team Lead |
 | Mary | [@marie-toni](https://github.com/marie-toni) | Developer |
 | Tobi | [@Toby-Morgan1](https://github.com/Toby-Morgan1) | Developer |
-| PlanetCard | src/components/PlanetCard.jsx | Micah |
-|  |  |
+| Micah | [@micahonovwakpoyeya-ux](https://github.com/micahonovwakpoyeya-ux) | Developer |
 
 ## Components / Services
 | Component | File | Built by |
