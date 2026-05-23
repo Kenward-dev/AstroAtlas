@@ -18,7 +18,7 @@ Built collaboratively as a capstone project for TS Academy.
 | Layout | src/components/Layout.jsx | Kenward |
 | Header | src/components/Header.jsx | Mary |
 | Hero | src/components/Hero.jsx | Kenward |
-| PlanetCard | src/components/PlanetCard.jsx |  |
+| PlanetCard | src/components/PlanetCard.jsx | Micah |
 | PlanetSection | src/components/PlanetSection.jsx |  |
 | VideoSection | src/components/VideoSection.jsx |  |
 | PlanetTable | src/components/PlanetTable.jsx | Tobi |
