@@ -8,7 +8,7 @@ export default function Footer() {
           <h3 className="footer__title">About</h3>
 
           <p className="footer__description">
-            Victor, Chinemerem, Doxi, Duke, Josh, Kenward, Marie & Tobi
+            Micah, Victor, Chinemerem, Doxi, Duke, Josh, Kenward, Marie & Tobi
           </p>
         </div>
 
